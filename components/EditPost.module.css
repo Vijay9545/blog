@@ -1,0 +1,60 @@
+.editorContainer {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.editorTitle {
+  font-family: var(--font-serif);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-brand);
+}
+
+.textarea {
+  width: 100%;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  resize: vertical;
+  outline: none;
+  background: var(--color-bg-main);
+  color: var(--color-text-main);
+  transition: all 0.2s ease;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.01);
+}
+
+.textarea:focus {
+  border-color: var(--color-brand);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.01), 0 0 0 2px rgba(15, 23, 42, 0.1);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.saveBtn {
+  padding: 0.75rem 1.75rem;
+  background-color: var(--color-brand);
+  color: var(--color-bg-main);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.saveBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
