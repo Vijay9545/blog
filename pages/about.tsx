@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Layout>
       <div className={styles.container} style={{ paddingTop: '4rem', paddingBottom: '6rem', maxWidth: '1000px' }}>
-        <h1 className={styles.title} style={{ marginBottom: '1.5rem', textAlign: 'center' }}>About FitnessBlog</h1>
+        <h1 className={styles.title}>About FitnessBlog</h1>
         <p style={{ textAlign: 'center', fontSize: '1.25rem', color: 'var(--color-text-muted)', marginBottom: '4rem', maxWidth: '800px', marginInline: 'auto', lineHeight: 1.6 }}>
           Empowering your wellness journey through evidence-based insights, expert guidance, and a supportive community.
         </p>
@@ -25,13 +25,13 @@ export default function About() {
         <div className={styles.bodyContent} style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', marginBottom: '4rem' }}>
             <div>
-              <h3 style={{ marginTop: 0, fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--color-brand)' }}>Our Mission</h3>
+              <h3 className={styles.sidebarTitle} style={{ marginTop: 0, borderBottom: 'none' }}>Our Mission</h3>
               <p style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'var(--color-text-main)' }}>
                 At FitnessBlog, we believe that true health is holistic. Our mission is to cut through industry noise and provide you with actionable, scientifically-backed information. We strive to make premium fitness knowledge accessible to everyone, from seasoned athletes to those taking their first steps toward a healthier lifestyle.
               </p>
             </div>
             <div>
-              <h3 style={{ marginTop: 0, fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--color-brand)' }}>Our Approach</h3>
+              <h3 className={styles.sidebarTitle} style={{ marginTop: 0, borderBottom: 'none' }}>Our Approach</h3>
               <p style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'var(--color-text-main)' }}>
                 We partner with certified trainers, registered dietitians, and medical professionals to ensure every article meets the highest standards of accuracy. Whether we're exploring the nuances of strength programming or delving into nutritional science, our commitment remains steadfast: delivering content you can trust and apply.
               </p>
@@ -41,7 +41,7 @@ export default function About() {
           <hr style={{ border: '0', height: '1px', background: 'var(--color-border)', margin: '4rem 0' }} />
 
           <div style={{ textAlign: 'center' }}>
-            <h3 style={{ fontSize: '1.75rem', marginBottom: '2rem' }}>The Team Behind the Insights</h3>
+            <h3 className={styles.relatedTitle} style={{ textAlign: 'center' }}>The Team Behind the Insights</h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
               {[
                 { name: 'Dr. Sarah Jenkins', role: 'Head of Nutrition', image: 'https://i.pravatar.cc/300?u=sarah' },

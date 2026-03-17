@@ -31,14 +31,22 @@
 
 .title {
   font-family: var(--font-serif);
-  font-size: 3.5rem;
-  line-height: 1.15;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  font-size: var(--h1-size);
+  line-height: 1.2;
+  font-weight: var(--h1-weight);
+  margin-bottom: 2rem;
   max-width: 900px;
   margin-inline: auto;
-  letter-spacing: -0.02em;
   color: var(--color-brand);
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 28px;
+    line-height: 40px;
+    max-width: 697px;
+  }
 }
 
 .articleMeta {
@@ -65,7 +73,7 @@
 .metaName, .metaDate {
   font-family: var(--font-sans);
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.05em;
   color: var(--color-text-muted);
 }
@@ -144,7 +152,7 @@
 .sidebarTitle {
   font-family: var(--font-sans);
   font-size: 1.15rem;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   color: var(--color-brand);
   border-bottom: 2px solid var(--color-border);
@@ -183,7 +191,7 @@
 .sidebarCardContent h4 {
   font-family: var(--font-serif);
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.4;
   color: var(--color-brand);
   margin-top: 0.5rem;
@@ -197,7 +205,7 @@
 }
 
 .sidebarCardType {
-  font-weight: 600;
+  font-weight: 400;
   color: var(--color-text-main);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -230,7 +238,7 @@
 }
 
 .guideName {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.95rem;
   color: var(--color-text-main);
 }
@@ -244,7 +252,7 @@
 .guideRating {
   font-size: 0.85rem;
   color: var(--color-text-muted);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .bodyContent {
@@ -261,8 +269,8 @@
   font-family: var(--font-serif);
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  font-size: 1.75rem;
-  font-weight: 700;
+  font-size: var(--h3-size);
+  font-weight: 400;
   color: var(--color-brand);
 }
 
@@ -273,7 +281,7 @@
 
 .editButton {
   padding: 0.6rem 1.25rem;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.9rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -324,7 +332,7 @@
 .bottomAuthorTitle {
   font-family: var(--font-serif);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--color-text-main);
   margin-bottom: 1.5rem;
 }
@@ -349,7 +357,7 @@
   max-width: 800px;
   margin: 0 auto;
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .postNavigation {
@@ -403,7 +411,7 @@
 .navLabel {
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--color-text-muted);
@@ -416,7 +424,7 @@
 .navTitle {
   font-family: var(--font-serif);
   font-size: 1.15rem;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--color-text-main);
   line-height: 1.4;
   display: -webkit-box;
@@ -463,8 +471,8 @@
 
 .relatedTitle {
   font-family: var(--font-serif);
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: var(--h2-size);
+  font-weight: 400;
   margin-bottom: 2.5rem;
   color: var(--color-brand);
 }
@@ -565,7 +573,7 @@
 .relatedCardContent h3 {
   font-family: var(--font-serif);
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 0.5rem;
   line-height: 1.4;
   color: var(--color-brand);
@@ -587,7 +595,7 @@
 }
 
 .tag {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;

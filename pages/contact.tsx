@@ -16,7 +16,7 @@ export default function Contact() {
   return (
     <Layout>
       <div className={styles.container} style={{ paddingTop: '4rem', paddingBottom: '4rem', maxWidth: '800px' }}>
-        <h1 className={styles.title} style={{ marginBottom: '1rem', textAlign: 'center' }}>Get in Touch</h1>
+        <h1 className={styles.title}>Get in Touch</h1>
         <p style={{ textAlign: 'center', color: 'var(--color-text-muted)', marginBottom: '3rem', fontSize: '1.1rem' }}>
           Have a question about fitness, nutrition, or our articles? We'd love to hear from you.
         </p>
@@ -24,7 +24,7 @@ export default function Contact() {
         <div style={{ background: 'var(--color-bg-alt)', padding: '3rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)' }}>
           {isSubmitted ? (
             <div style={{ textAlign: 'center', padding: '2rem 0' }}>
-              <h3 style={{ color: 'var(--color-brand)', marginBottom: '1rem', fontFamily: 'var(--font-serif)', fontSize: '1.75rem' }}>Thank You!</h3>
+              <h3 className={styles.relatedTitle} style={{ color: 'var(--color-brand)', textAlign: 'center' }}>Thank You!</h3>
               <p style={{ color: 'var(--color-text-main)' }}>Your message has been sent successfully. We will get back to you soon.</p>
               <button 
                 onClick={() => setIsSubmitted(false)}

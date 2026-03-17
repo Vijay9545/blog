@@ -8,7 +8,7 @@ export default function Articles() {
   return (
     <Layout>
       <div className={styles.container} style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
-        <h1 className={styles.title} style={{ fontSize: '2.5rem', marginBottom: '3rem', textAlign: 'left' }}>All Articles</h1>
+        <h1 className={styles.title} style={{ textAlign: 'left' }}>All Articles</h1>
         
         <div className={styles.relatedGrid}>
           {posts.map(post => (
